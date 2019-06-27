@@ -1,0 +1,17 @@
+#server:
+#  port: 8021
+#
+#eureka:
+#  instance:
+#    hostname: peer1
+#  client:
+##    register-with-eureka: false
+##    fetch-registry: false
+#    service-url:
+#      defaultZone: http://peer2:8022/eureka/,http://peer3:8023/eureka/
+#
+#spring:
+#  application:
+#    name: springcloud-eureka-server
+#  profiles:
+#    active: peer1

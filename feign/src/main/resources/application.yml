@@ -1,0 +1,11 @@
+server:
+  port: 8034
+
+spring:
+  application:
+    name: springcloud-feign
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8021/eureka/
