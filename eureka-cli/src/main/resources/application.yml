@@ -9,3 +9,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8021/eureka/
+    #拉取服务列表的时间间隔，每隔5秒去注册中心拉取服务列表
+    registry-fetch-interval-seconds: 5
+  instance:
+    # 10s未续约即过期，EurekaServer就会认为该服务宕机，会从服务列表中移除
+    lease-expiration-duration-in-seconds: 10
+    # 续约：5 秒一次
+    lease-renewal-interval-in-seconds: 5

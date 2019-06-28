@@ -21,6 +21,8 @@
     <module>eureka-cli</module>
     <module>ribbon</module>
     <module>feign</module>
+    <module>ribbon-hystrix</module>
+    <module>feign-hystrix</module>
   </modules>
 
   <properties>

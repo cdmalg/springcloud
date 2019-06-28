@@ -9,6 +9,9 @@ eureka:
 #    fetch-registry: false
     service-url:
       defaultZone: http://peer1:8021/eureka/,http://peer3:8023/eureka/
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 1000
 
 spring:
   application:
