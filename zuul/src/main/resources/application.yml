@@ -1,0 +1,20 @@
+server:
+  port: 8037
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8021/eureka/
+
+zuul:
+  routes:
+    api-ribbon:
+      path: /api-ribbon/**
+      serviceId: springcloud-ribbon
+    api-feign:
+      path: /api-feign/**
+      serviceId: springcloud-feign-hystrix
+
+spring:
+  application:
+    name: springcloud-zuul
